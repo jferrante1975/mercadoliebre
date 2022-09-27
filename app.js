@@ -10,6 +10,18 @@ app.get('/', (req,res) => {
 
 })
 
+app.get('/register', (req,res) => {
+
+    res.sendFile(path.join(__dirname, './src/views/register.html'));
+
+})
+
+app.get('/login', (req,res) => {
+
+    res.sendFile(path.join(__dirname, './src/views/login.html'));
+
+})
+
 app.listen(3030, () => {
     console.log('Inicializado el servidor');
 })
